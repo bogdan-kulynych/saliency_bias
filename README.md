@@ -1,7 +1,7 @@
 ## How to Become More Salient? Surfacing Representation Biases of the Saliency Prediction Model
 
 ![Transition 1](images/transition1.png)
-Predicted maximum saliency: 3.5501 → 4.7940 (135.04% increase)
+![Transition 1](images/transition1_plot.png)
 
 This is a submission to the [Twitter Algorithmic bias
 challenge](https://hackerone.com/twitter-algorithmic-bias).
@@ -42,7 +42,7 @@ Applying a broad framework of thematic analysis [Joffe, 2011], we proceed in the
 ### Results
 We generated 16 counterfactuals, presented as the initial image on the left, intermediate images generated during the runtime of the search algorithm, and the final image on the right. We can observe the following salient themes.
 
-**Lightening or warming the skin color.**
+#### Lightening or warming the skin color
 In 37% of cases, increasing saliency was achieved by either lightening the skin color,
 ![](images/transition1.png)
 ![](images/transition5.png)
@@ -52,17 +52,17 @@ or making it warmer, more saturated, and more high-contrast:
 
 In some of these and other cases we can notice that the counterfactuals make the skin texture also appear smoother.
 
-**Attaining stereotypically feminine traits.**
+#### Attaining stereotypically feminine traits
 A quarter of the cases increased saliency through making the face appear more stereotypically feminine, as perceived by the coder:
 ![](images/transition4.png)
 ![](images/transition12.png)
 
-**Changing the apparent age.**
+#### Changing the apparent age
 In 18% of cases, making the depicted person apparently younger increased saliency:
 ![](images/transition16.png)
 ![](images/transition13.png)
 
-**Slimming the face.**
+#### Slimming the face
 The same proportion of modifications appeared to make the face slimmer:
 ![](images/transition7.png)
 ![](images/transition8.png)
@@ -98,96 +98,111 @@ To reproduce the result, one needs to run the provided [notebook](max_saliency.i
 ### Annotated images:
 
 ![](images/transition1.png)
-
-- Saliency increase: 3.5501 → 4.7940 (135.04%)
+![](images/transition1_plot.png)
+- Saliency increase: 3.5501 → 5.0500 (142.25%)
 - Codes: `glasses removal`, `skin lightening`, `skin texture smoothing`
 
 ---
 
 ![](images/transition2.png)
-- Saliency increase: 4.8829 → 5.9051 (120.93%)
+![](images/transition2_plot.png)
+- Saliency increase: 4.8829 → 6.0041 (122.96%)
 - Codes: `skin lightening`, `aging`
 
 ---
 
 ![](images/transition3.png)
+![](images/transition3_plot.png)
 - Saliency increase: 4.1627 → 5.1282 (123.19%)
 - Codes: `feminization`
 
 ---
 
 ![](images/transition4.png)
-- Saliency increase: 4.2452 → 4.9178 (115.84%)
+![](images/transition4_plot.png)
+- Saliency increase: 4.2452 → 5.1052 (120.26%)
 - Codes: `feminization`, `skin color warming`
 
 ---
 
 ![](images/transition5.png)
-- Saliency increase: 4.2102 → 5.4050 (128.38%)
+![](images/transition5_plot.png)
+- Saliency increase: 4.2101 → 5.5751 (132.42%)
 - Codes: `skin lightening`, `skin texture smoothing`
 
 ---
 
 ![](images/transition6.png)
-- Saliency increase: 4.7841 → 5.4259 (113.42%)
+![](images/transition6_plot.png)
+- Saliency increase: 4.7844 → 5.5148 (115.27%)
 - Codes: `rotation`
 
 ---
 
 ![](images/transition7.png)
-- Saliency increase: 4.0503 → 5.2067 (128.55%)
+![](images/transition7_plot.png)
+- Saliency increase: 4.0503 → 5.4831 (135.37%)
 - Codes: `de-aging`, `slimming`, `skin lightening`
 
 ---
 
 ![](images/transition8.png)
-- Saliency increase: 4.2863 → 5.0953 (118.88%)
+![](images/transition8_plot.png)
+- Saliency increase: 4.2863 → 5.1079 (119.17%)
 - Codes: `slimming`, `skin lightening`, `adding accessories`
 
 ---
 
 ![](images/transition9.png)
-- Saliency increase: 5.0172 → 6.0943 (121.47%)
+![](images/transition9_plot.png)
+- Saliency increase: 5.0172 → 6.1746 (123.07%)
 - Codes: `rotation`, `skin color warming`
 
 ---
 
 ![](images/transition10.png)
-- Saliency increase: 4.3722 → 5.5674 (127.34%)
+![](images/transition10_plot.png)
+- Saliency increase: 4.3722 → 5.6480 (129.18%)
 - Codes: `feminization`, `skin texture smoothing`
 
 ---
 
 ![](images/transition11.png)
-- Saliency increase: 3.7050 → 5.1378 (138.67%)
+![](images/transition11_plot.png)
+- Saliency increase: 3.7050 → 5.3977 (145.69%)
 - Codes: `skin color warming`, `slimming`
 
 ---
 
 ![](images/transition12.png)
-- Saliency increase: 2.8133 → 4.2452 (150.90%)
+![](images/transition12_plot.png)
+- Saliency increase: 2.8133 → 4.4987 (159.91%)
 - Codes: `feminization`
 
 ---
 
 ![](images/transition13.png)
-- Saliency increase: 5.4335 → 6.0596 (111.52%)
+![](images/transition13_plot.png)
+- Saliency increase: 5.4336 → 6.0918 (112.12%)
 - Codes: `de-aging`
 
 ---
 
 ![](images/transition14.png)
-- Saliency increase: 3.7001 → 4.9863 (134.76%)
+![](images/transition14_plot.png)
+- Saliency increase: 3.7001 → 5.1744 (139.85%)
 - Codes: `skin color darkening`, `grey hair removal`
 
 ---
 
 ![](images/transition15.png)
-- Saliency increase: 4.8831 → 6.0405 (123.70%)
+![](images/transition15_plot.png)
+- Saliency increase: 3.7001 → 5.1744 (139.85%)
 - Codes: `skin color warming`, `hair color saturation`
 
 ---
 
 ![](images/transition16.png)
-- Saliency increase: 4.7067 → 5.7721 (122.64%)
+![](images/transition16_plot.png)
+- Saliency increase: 4.8834 → 6.0956 (124.82%)
 - Codes: `de-aging`, `skin texture smoothing`, `skin color darkening`
